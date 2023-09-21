@@ -1,0 +1,96 @@
+# =======================
+# Conda Fundamentals
+# =======================
+
+# Conda is an open-source package manager and environment management
+# system.
+# Keeping Anaconda in the home directory can sometimes aid in
+# portability. If the home directory is backed up or moved, the
+# Anaconda installation and all its environments move with it.
+
+# -----------------------
+# Environment Management
+# -----------------------
+
+# Create a new environment with a specific Python version:
+# conda create --name <env_name> python=<python_version>
+# conda create --name <env_name> 
+
+# Activate an environment:
+# conda activate <env_name>
+
+# Deactivate the currently active environment:
+# conda deactivate
+
+# List all available environments:
+# conda env list
+
+# Remove an environment:
+# conda env remove --name <env_name>
+
+# Clone an environment:
+# conda create --name <new_env_name> --clone <existing_env_name>
+
+# Export an environment to a YAML file:
+# conda env export > environment.yml
+
+# Create an environment from a YAML file:
+# conda env create -f environment.yml
+
+# -----------------------
+# Package Management
+# -----------------------
+
+# Install a package:
+# conda install <package_name>
+
+# Install multiple packages:
+# conda install <package1> <package2>
+
+# Search for a package:
+# conda search <package_name>
+
+# Update a specific package:
+# conda update <package_name>
+
+# Update all packages in the current environment:
+# conda update --all
+
+# Remove a package:
+# conda remove <package_name>
+
+# List installed packages:
+# conda list
+
+# -----------------------
+# Channels and Configurations
+# -----------------------
+
+# Conda packages are organized in repositories called channels.
+# By default, packages are fetched from the main channel, but other channels like conda-forge are popular.
+
+# Install a package from a specific channel:
+# conda install <package_name> --channel <channel_name>
+
+# Add a channel (makes it a permanent source for packages):
+# conda config --add channels <channel_name>
+
+# Display conda configuration:
+# conda config --show
+
+# -----------------------
+# Miscellaneous Commands
+# -----------------------
+
+# Update conda itself:
+# conda update conda
+
+# Clean up unused packages and caches to free space:
+# conda clean --all
+
+# Display information about the current conda installation:
+# conda info
+
+# =======================
+# End of Conda Fundamentals
+# =======================
